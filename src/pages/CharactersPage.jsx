@@ -3,20 +3,22 @@
 // Adapter le code pour utiliser react_router et les hooks comme dans l'exemple du guide, grâce aux concepts de loader et useLoaderData . On appelera directement la fonction getCharacters dans le loader (pas de fonction fetch ).
 
 import { useLoaderData } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { NumberOfCharacters } from "../components/NumberOfCharacters";
+import { CharactersList } from "../components/CharactersList";
 
 export default function CharactersPage() {
     const characters = useLoaderData(); // Assurez-vous que cette fonction soit importée correctement
+    useEffect(() => {
+        document.title = "Marvel App"; // Changer le titre de la page
+      }, []);
 
     return (
         <div>
-            <h1>Liste des personnages</h1>
-            <ul>
-                {characters.map(character => (
-                    <li key={character.id}>
-                        <a href={`/character/${character.id}`}>{character.name}</a>
-                    </li>
-                ))}
-            </ul>
+            <h2>Marvel Characters</h2>
+            <CharactersList characters={characters} />
+
+            <NumberOfCharacters characters={characters} />
         </div>
     );
 }

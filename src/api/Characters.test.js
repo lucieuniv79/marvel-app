@@ -1,6 +1,7 @@
 // Importation des fonctions à tester
-import { getCharacters, getCharacterById } from './path/to/your/file';
+
 import characters from '../data/characters.json';
+import { getCharacterById, getCharacters } from './characters-api';
 
 // Test pour la fonction getCharacters
 describe('getCharacters', () => {

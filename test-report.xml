@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Users\lrusse01\marvel-app\src\api\Characters.test.js">
+    <testCase name="getCharacters doit retourner tous les personnages" duration="5"/>
+    <testCase name="getCharacters doit retourner un tableau" duration="0"/>
+    <testCase name="getCharacterById doit retourner un personnage par son ID" duration="1"/>
+    <testCase name="getCharacterById doit retourner undefined pour un ID inexistant" duration="0"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharactersPage.test.jsx">
+    <testCase name="render CharactersPage component" duration="49"/>
+  </file>
+</testExecutions>

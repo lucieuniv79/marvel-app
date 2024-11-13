@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\lrusse01\marvel-app\src\api\Characters.test.js">
-    <testCase name="getCharacters doit retourner tous les personnages" duration="7"/>
-    <testCase name="getCharacters doit retourner un tableau" duration="0"/>
+    <testCase name="getCharacters doit retourner tous les personnages" duration="6"/>
+    <testCase name="getCharacters doit retourner un tableau" duration="1"/>
     <testCase name="getCharacterById doit retourner un personnage par son ID" duration="0"/>
-    <testCase name="getCharacterById doit retourner undefined pour un ID inexistant" duration="0"/>
-  </file>
-  <file path="C:\Users\lrusse01\marvel-app\src\pages\AboutPage.test.jsx">
-    <testCase name="AboutPage Component should render the About information" duration="28"/>
-    <testCase name="AboutPage Component should change the document title" duration="3"/>
-  </file>
-  <file path="C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx">
-    <testCase name="CharacterDetail Component should display character image when thumbnail is provided" duration="35"/>
-    <testCase name="CharacterDetail Component should display &quot;No description available.&quot; when description is missing" duration="4"/>
-    <testCase name="CharacterDetail Component should display &quot;No modification date available.&quot; when modified date is missing" duration="2"/>
-    <testCase name="CharacterDetail Component should display the correct description and modification date when provided" duration="3"/>
-  </file>
-  <file path="C:\Users\lrusse01\marvel-app\src\pages\ContactPage.test.jsx">
-    <testCase name="ContactPage Component should render the contact information" duration="34"/>
-    <testCase name="ContactPage Component should change the document title" duration="3"/>
-    <testCase name="ContactPage Component should have a mailto link" duration="32"/>
-  </file>
-  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharacterDetailPage.test.jsx">
-    <testCase name="CharacterDetailPage Component should render character name correctly" duration="33"/>
-    <testCase name="CharacterDetailPage Component should render CharacterDetail component with character data" duration="6"/>
-  </file>
-  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharactersPage.test.jsx">
-    <testCase name="render CharactersPage component" duration="66"/>
-  </file>
-  <file path="C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx">
-    <testCase name="CharactersList Component should display a list with one character" duration="62"/>
-    <testCase name="CharactersList Component should display a list with multiple characters" duration="25"/>
+    <testCase name="getCharacterById doit retourner undefined pour un ID inexistant" duration="1"/>
   </file>
   <file path="C:\Users\lrusse01\marvel-app\src\components\NumberOfCharacters.test.jsx">
     <testCase name="NumberOfCharacters Component should display &quot;There is 1 character&quot; when there is one character in the list" duration="15"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\AboutPage.test.jsx">
+    <testCase name="AboutPage Component should render the About information" duration="30"/>
+    <testCase name="AboutPage Component should change the document title" duration="4"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage Component should render character name correctly" duration="32"/>
+    <testCase name="CharacterDetailPage Component should render CharacterDetail component with character data" duration="4"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx">
+    <testCase name="CharacterDetail Component should display character image when thumbnail is provided" duration="27"/>
+    <testCase name="CharacterDetail Component should display &quot;No description available.&quot; when description is missing" duration="7"/>
+    <testCase name="CharacterDetail Component should display &quot;No modification date available.&quot; when modified date is missing" duration="3"/>
+    <testCase name="CharacterDetail Component should display the correct description and modification date when provided" duration="3"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharactersPage.test.jsx">
+    <testCase name="render CharactersPage component" duration="56"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\ContactPage.test.jsx">
+    <testCase name="ContactPage Component should render the contact information" duration="30"/>
+    <testCase name="ContactPage Component should change the document title" duration="4"/>
+    <testCase name="ContactPage Component should have a mailto link" duration="29"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx">
+    <testCase name="CharactersList Component should display a list with one character" duration="54"/>
+    <testCase name="CharactersList Component should display a list with multiple characters" duration="20"/>
   </file>
 </testExecutions>

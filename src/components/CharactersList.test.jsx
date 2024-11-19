@@ -47,3 +47,8 @@ describe('CharactersList Component', () => {
     expect(screen.getByRole('link', { name: 'Hulk' })).toHaveAttribute('href', '/characters/3');
   });
 });
+
+/* PARTIE SUR LA FONCTION QUI ORDONNE LES DONNEES */
+
+ 
+

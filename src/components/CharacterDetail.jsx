@@ -1,22 +1,30 @@
 // src/components/CharacterDetail.jsx
+import PropTypes from 'prop-types';
 
-import React from 'react';
-
-const CharacterDetail = ({ character }) => {
-    const { description, thumbnail, modified} = character;
-
+function CharacterDetail({ character = {} }) {
     return (
-        <div>
-            {thumbnail && (
-                <img
-                    src={`${thumbnail.path}/standard_large.${thumbnail.extension}`}
-                    alt={character.name}
-                />
-            )}
-            <p>{description || "No description available."}</p>
-            <p>{modified || "No modification date available."}</p>
+        <div>            
+            <h2>{character.name}</h2>
+            {
+                // if character.thumbnail is not null, then render the image
+                character.thumbnail && <img src={`${character.thumbnail.path}/standard_large.${character.thumbnail.extension}`} alt={character.name} />
+            }
+            <p>{character.description}</p>
+            <p>{character.modified}</p>
         </div>
     );
+}
+
+CharacterDetail.propTypes = {
+    character: PropTypes.shape({
+        name: PropTypes.string,
+        description: PropTypes.string,
+        modified: PropTypes.string,
+        thumbnail: PropTypes.shape({
+            path: PropTypes.string,
+            extension: PropTypes.string,
+        }),
+    }),
 };
 
 export default CharacterDetail;

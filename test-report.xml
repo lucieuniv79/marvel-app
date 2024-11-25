@@ -1,3 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage Component should render character name correctly" duration="27"/>
+    <testCase name="CharacterDetailPage Component should render CharacterDetail component with character data" duration="4"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx">
+    <testCase name="CharacterDetail Component should display character image when thumbnail is provided" duration="26"/>
+    <testCase name="CharacterDetail Component should display &quot;No description available.&quot; when description is missing" duration="7">
+      <failure message="TestingLibraryElementError: Unable to find an element with the text: No description available.. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: No description available.. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div>
+      <h2>
+        Iron Man
+      </h2>
+      <p />
+      <p>
+        2024-01-01T12:00:00Z
+      </p>
+    </div>
+  </div>
+</body>
+    at Object.getElementError (C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19
+    at Object.getByText (C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx:40:19)
+    at Promise.then.completed (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+    <testCase name="CharacterDetail Component should display &quot;No modification date available.&quot; when modified date is missing" duration="3">
+      <failure message="TestingLibraryElementError: Unable to find an element with the text: No modification date available.. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: No modification date available.. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div>
+      <h2>
+        Hulk
+      </h2>
+      <p>
+        A green-skinned hero with immense strength.
+      </p>
+      <p />
+    </div>
+  </div>
+</body>
+    at Object.getElementError (C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19
+    at Object.getByText (C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx:54:19)
+    at Promise.then.completed (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+    <testCase name="CharacterDetail Component should display the correct description and modification date when provided" duration="2"/>
+  </file>
 </testExecutions>

@@ -46,9 +46,31 @@ describe('CharactersList Component', () => {
     expect(screen.getByRole('link', { name: 'Iron Man' })).toHaveAttribute('href', '/characters/2');
     expect(screen.getByRole('link', { name: 'Hulk' })).toHaveAttribute('href', '/characters/3');
   });
-});
 
 /* PARTIE SUR LA FONCTION QUI ORDONNE LES DONNEES */
+  it('should sort characters by ID', () => {
+    render(
+      <BrowserRouter>
+        <CharactersList characters={mockCharacters} />
+      </BrowserRouter>
+    );
+
+    // Change le champ de tri à ID
+    fireEvent.change(screen.getByLabelText('Trier par :'), {
+      target: { value: 'id' },
+    });
+
+    // Tri par ID (croissant par défaut)
+    const sortedByIdItems = screen.getAllByRole('listitem');
+    expect(sortedByIdItems[0]).toHaveTextContent('Beast');
+    expect(sortedByIdItems[1]).toHaveTextContent('Captain America');
+    expect(sortedByIdItems[2]).toHaveTextContent('Deadpool');
+  });
+
+
+});
+
+
 
  
 

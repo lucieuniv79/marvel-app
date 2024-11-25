@@ -3,29 +3,13 @@
   <file path="C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx">
     <testCase name="CharactersList Component should display a list with one character" duration="0"/>
     <testCase name="CharactersList Component should display a list with multiple characters" duration="0"/>
-    <testCase name="CharactersList Component - Sorting Functionality should sort characters by ID in ascending order" duration="175">
-      <failure message="TypeError: Cannot destructure property &apos;basename&apos; of &apos;React__namespace.useContext(...)&apos; as it is null."><![CDATA[TypeError: Cannot destructure property 'basename' of 'React__namespace.useContext(...)' as it is null.
-    at basename (C:\Users\lrusse01\marvel-app\node_modules\react-router-dom\index.tsx:962:11)
-    at renderWithHooks (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
-    at updateForwardRef (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:19245:20)
-    at beginWork (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:21675:16)
-    at beginWork$1 (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:27465:14)
-    at performUnitOfWork (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:26599:12)
-    at workLoopSync (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:26505:5)
-    at renderRootSync (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:25789:22)
-    at flushActQueue (C:\Users\lrusse01\marvel-app\node_modules\react\cjs\react.development.js:2667:24)
-    at act (C:\Users\lrusse01\marvel-app\node_modules\react\cjs\react.development.js:2582:11)
-    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\react\dist\act-compat.js:47:25
-    at renderRoot (C:\Users\lrusse01\marvel-app\node_modules\@testing-library\react\dist\pure.js:180:26)
-    at render (C:\Users\lrusse01\marvel-app\node_modules\@testing-library\react\dist\pure.js:271:10)
-    at Object.<anonymous> (C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx:81:11)
+    <testCase name="CharactersList Component should sort characters by ID" duration="2">
+      <failure message="ReferenceError: mockCharacters is not defined"><![CDATA[ReferenceError: mockCharacters is not defined
+    at Object.mockCharacters (C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx:54:37)
     at Promise.then.completed (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (<anonymous>)
     at callAsyncCircusFn (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:231:10)
     at _callCircusTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at _runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:252:3)
     at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:126:9)
     at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:121:9)

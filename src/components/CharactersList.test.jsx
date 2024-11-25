@@ -3,7 +3,7 @@ import '@testing-library/react';
 
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { CharactersList } from './CharactersList';
 
@@ -46,4 +46,52 @@ describe('CharactersList Component', () => {
     expect(screen.getByRole('link', { name: 'Iron Man' })).toHaveAttribute('href', '/characters/2');
     expect(screen.getByRole('link', { name: 'Hulk' })).toHaveAttribute('href', '/characters/3');
   });
+
+
+/* PARTIE SUR LA FONCTION QUI ORDONNE LES DONNEES */
+
+  const mockCharacters = [
+    {
+      id: '1009175',
+      name: 'Beast',
+      modified: '2014-01-13T14:48:32-0500',
+    },
+    {
+      id: '1009220',
+      name: 'Captain America',
+      modified: '2020-04-04T19:01:59-0400',
+    },
+    {
+      id: '1009268',
+      name: 'Deadpool',
+      modified: '2020-04-04T19:02:15-0400',
+    },
+  ];
+
+
+  it('should sort characters by ID', () => {
+    render(
+      <BrowserRouter>
+        <CharactersList characters={mockCharacters} />
+      </BrowserRouter>
+    );
+
+    // Change le champ de tri à ID
+    fireEvent.change(screen.getByLabelText('Trier par :'), {
+      target: { value: 'id' },
+    });
+
+    // Tri par ID (croissant par défaut)
+    const sortedByIdItems = screen.getAllByRole('listitem');
+    expect(sortedByIdItems[0]).toHaveTextContent('Beast');
+    expect(sortedByIdItems[1]).toHaveTextContent('Captain America');
+    expect(sortedByIdItems[2]).toHaveTextContent('Deadpool');
+  });
+
+
 });
+
+
+
+ 
+

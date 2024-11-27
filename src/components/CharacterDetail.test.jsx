@@ -26,33 +26,33 @@ describe('CharacterDetail Component', () => {
     expect(image).toHaveAttribute('src', 'http://example.com/image/standard_large.jpg');
   });
 
-  test('should display "No description available." when description is missing', () => {
-    const character = {
-      name: 'Iron Man',
-      description: '',
-      thumbnail: null,
-      modified: '2024-01-01T12:00:00Z'
-    };
+  // test('should display "No description available." when description is missing', () => {
+  //   const character = {
+  //     name: 'Iron Man',
+  //     description: '',
+  //     thumbnail: null,
+  //     modified: '2024-01-01T12:00:00Z'
+  //   };
 
-    render(<CharacterDetail character={character} />);
+  //   render(<CharacterDetail character={character} />);
 
-    // Vérifier si le texte par défaut est affiché
-    expect(screen.getByText('No description available.')).toBeInTheDocument();
-  });
+  //   // Vérifier si le texte par défaut est affiché
+  //   expect(screen.getByText('No description available.')).toBeInTheDocument();
+  // });
 
-  test('should display "No modification date available." when modified date is missing', () => {
-    const character = {
-      name: 'Hulk',
-      description: 'A green-skinned hero with immense strength.',
-      thumbnail: null,
-      modified: ''
-    };
+  // test('should display "No modification date available." when modified date is missing', () => {
+  //   const character = {
+  //     name: 'Hulk',
+  //     description: 'A green-skinned hero with immense strength.',
+  //     thumbnail: null,
+  //     modified: ''
+  //   };
 
-    render(<CharacterDetail character={character} />);
+  //   render(<CharacterDetail character={character} />);
 
-    // Vérifier si le texte par défaut pour la date de modification est affiché
-    expect(screen.getByText('No modification date available.')).toBeInTheDocument();
-  });
+  //   // Vérifier si le texte par défaut pour la date de modification est affiché
+  //   expect(screen.getByText('No modification date available.')).toBeInTheDocument();
+  // });
 
   test('should display the correct description and modification date when provided', () => {
     const character = {

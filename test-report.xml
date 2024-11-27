@@ -1,3 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\lrusse01\marvel-app\src\api\Characters.test.js">
+    <testCase name="getCharacters doit retourner tous les personnages" duration="8"/>
+    <testCase name="getCharacters doit retourner un tableau" duration="0"/>
+    <testCase name="getCharacterById doit retourner un personnage par son ID" duration="0"/>
+    <testCase name="getCharacterById doit retourner undefined pour un ID inexistant" duration="1"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\NumberOfCharacters.test.jsx">
+    <testCase name="NumberOfCharacters Component should display &quot;There is 1 character&quot; when there is one character in the list" duration="17"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\AboutPage.test.jsx">
+    <testCase name="AboutPage Component should render the About information" duration="38"/>
+    <testCase name="AboutPage Component should change the document title" duration="4"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage Component should render character name correctly" duration="29"/>
+    <testCase name="CharacterDetailPage Component should render CharacterDetail component with character data" duration="4"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\ContactPage.test.jsx">
+    <testCase name="ContactPage Component should render the contact information" duration="39"/>
+    <testCase name="ContactPage Component should change the document title" duration="5"/>
+    <testCase name="ContactPage Component should have a mailto link" duration="29"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx">
+    <testCase name="CharacterDetail Component should display character image when thumbnail is provided" duration="23"/>
+    <testCase name="CharacterDetail Component should display the correct description and modification date when provided" duration="7"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharactersPage.test.jsx">
+    <testCase name="render CharactersPage component" duration="61"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx">
+    <testCase name="CharactersList Component should display a list with one character" duration="60"/>
+    <testCase name="CharactersList Component should display a list with multiple characters" duration="19"/>
+    <testCase name="CharactersList Component should sort characters by ID" duration="18"/>
+  </file>
 </testExecutions>

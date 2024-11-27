@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect } from "react";
 import * as d3 from "d3";
-import { prepareData } from './chart-utils';
+import { prepareData } from './ChartUtils';
 
 /**
  * Draw the pie chart

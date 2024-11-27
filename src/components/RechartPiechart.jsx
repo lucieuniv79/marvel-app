@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { PieChart, Pie, Tooltip, Cell } from 'recharts';
-import { prepareData } from './chart-utils';
+import { prepareData } from './ChartUtils';
 
 const RechartsPieChart = ({ data }) => {
     // Prepare the data

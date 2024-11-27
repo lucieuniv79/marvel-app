@@ -1,58 +1,66 @@
 import '@testing-library/jest-dom';
-
-import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import { MemoryRouter } from 'react-router-dom';
+import { useLoaderData } from 'react-router';
 import CharacterDetailPage from './CharacterDetailPage';
-import CharacterDetail from '../components/CharacterDetail';
 
-// Mock de CharacterDetail pour simplifier le test
-jest.mock('../components/CharacterDetail', () => {
-  return ({ character }) => (
-    <div data-testid="character-detail-mock">
-      Character Detail for: {character.name}
-    </div>
-  );
-});
-
-// Mock de useLoaderData pour simuler les données de chargement du personnage
-jest.mock('react-router-dom', () => ({
-  ...jest.requireActual('react-router-dom'),
-  useLoaderData: jest.fn(),
+// Mock the useLoaderData hook
+jest.mock('react-router', () => ({
+    useLoaderData: jest.fn(),
 }));
+ 
+describe('CharacterDetailPage', () => {
+    const character = {
+        name: 'Thor',
+        description: 'God of Thunder',
+        modified: '2023-10-01',
+        thumbnail: { path: 'path/to/image', extension: 'jpg' },
+        capacities: {
+            force: 5,
+            intelligence: 8,
+            durability: 6,
+            energy: 6,
+            speed: 1,
+            fighting: 3
+        }
+    };
 
-describe('CharacterDetailPage Component', () => {
-  const mockCharacterData = {
-    id: 1,
-    name: 'Spider-Man',
-    description: 'A superhero with spider-like abilities.',
-  };
+    beforeEach(() => {
+        useLoaderData.mockReturnValue(character);
+    });
 
-  beforeEach(() => {
-    // Simule les données du personnage pour useLoaderData
-    require('react-router-dom').useLoaderData.mockReturnValue(mockCharacterData);
-  });
+    test('render CharacterDetailPage component', () => {
+        render(<CharacterDetailPage />);
+        expect(document.title).toBe('Thor | Marvel App');
 
-  test('should render character name correctly', () => {
-    render(
-      <MemoryRouter>
-        <CharacterDetailPage />
-      </MemoryRouter>
-    );
+        const nameElement = screen.getByText(character.name);
+        expect(nameElement).toBeInTheDocument();
 
-    // Vérifier que le nom du personnage est affiché correctement
-    expect(screen.getByText('Spider-Man')).toBeInTheDocument();
-  });
+        const descriptionElement = screen.getByText(character.description);
+        expect(descriptionElement).toBeInTheDocument();
 
-  test('should render CharacterDetail component with character data', () => {
-    render(
-      <MemoryRouter>
-        <CharacterDetailPage />
-      </MemoryRouter>
-    );
+        const modifiedElement = screen.getByText(character.modified);
+        expect(modifiedElement).toBeInTheDocument();
 
-    // Vérifier que le composant CharacterDetail est rendu avec les bonnes données
-    expect(screen.getByTestId('character-detail-mock')).toHaveTextContent('Character Detail for: Spider-Man');
-  });
+        const imageElement = screen.getByAltText(character.name);
+        expect(imageElement).toBeInTheDocument();
+        expect(imageElement).toHaveAttribute('src', 'path/to/image/standard_large.jpg');
+
+        // expect to have a heading with the text "Capacities"
+        const h2CapacitiesElement = screen.getByRole('heading', { level: 2, name: 'Capacities' });
+        expect(h2CapacitiesElement).toBeInTheDocument();
+
+        // expect to have a heading with the text "Using D3"
+        const h3D3Element = screen.getByRole('heading', { level: 3, name: 'Using D3' });
+        expect(h3D3Element).toBeInTheDocument();
+
+        // expect to have a heading with the text "Using Recharts"
+        const h3RechartsElement = screen.getByRole('heading', { level: 3, name: 'Using Recharts' });
+        expect(h3RechartsElement).toBeInTheDocument();
+
+        // expect to have a div with the id "pie-container"
+        expect(document.getElementById('pie-container')).toBeInTheDocument();
+
+        // expect to a an div with class "recharts-wrapper"
+        expect(document.querySelector('.recharts-wrapper')).toBeInTheDocument();
+    });
 });

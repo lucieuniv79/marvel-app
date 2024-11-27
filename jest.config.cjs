@@ -7,7 +7,8 @@ module.exports = {
     "src/**/*.{js,jsx}", // Collect coverage from all js or jsx files in src folder
     "!src/**/*.test.{js,jsx}", // Exclude test files from coverage
   ],
-
+  
+  //ignore e2e test
   testPathIgnorePatterns:[
     "/e2e-tests/",
   ],

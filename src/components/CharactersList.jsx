@@ -8,6 +8,15 @@ export function CharactersList({ characters = [] }) {
     // État pour l'ordre de tri (ascendant ou descendant)
     const [sortOrder, setSortOrder] = useState('asc');
 
+    // Fonction pour formater une date au format jj-mm-yyyy
+    const formatDate = (isoString) => {
+        const date = new Date(isoString);
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(date); // Nom complet du mois
+        const year = date.getFullYear();
+        return `${day} ${month} ${year}`;
+    };
+
     // Fonction pour trier les personnages en fonction du champ et de l'ordre sélectionnés
     const sortedCharacters = [...characters].sort((a, b) => {
         if (sortOrder === 'asc') {
@@ -49,7 +58,7 @@ export function CharactersList({ characters = [] }) {
                 {sortedCharacters.map((character) => (
                     <li key={character.id}>
                         <Link to={`/characters/${character.id}`}>
-                            {character.name}
+                            {character.name} - {formatDate(character.modified)}
                         </Link>
                     </li>
                 ))}

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx">
-    <testCase name="CharacterDetail Component should display character image when thumbnail is provided" duration="24"/>
-    <testCase name="CharacterDetail Component should display the correct description and formatted modification date when provided" duration="6"/>
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx">
+    <testCase name="CharactersList Component should display a list sorted by name in ascending order" duration="65"/>
+    <testCase name="CharactersList Component should sort the list by ID when the ID option is selected" duration="19"/>
+    <testCase name="CharactersList Component should sort the list by modification date when &quot;modified&quot; option is selected" duration="21"/>
+    <testCase name="CharactersList Component should sort the list in descending order when &quot;Décroissant&quot; is selected" duration="10"/>
   </file>
 </testExecutions>

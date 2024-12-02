@@ -1,5 +1,6 @@
 // src/components/CharacterDetail.jsx
 import PropTypes from 'prop-types';
+import { formatDate } from './CharactersList';
 
 function CharacterDetail({ character = {} }) {
     return (
@@ -10,7 +11,7 @@ function CharacterDetail({ character = {} }) {
                 character.thumbnail && <img src={`${character.thumbnail.path}/standard_large.${character.thumbnail.extension}`} alt={character.name} />
             }
             <p>{character.description}</p>
-            <p>{character.modified}</p>
+            <p>{formatDate(character.modified)}</p>
         </div>
     );
 }

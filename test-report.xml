@@ -1,12 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx">
+    <testCase name="CharacterDetail Component should display character image when thumbnail is provided" duration="35"/>
+    <testCase name="CharacterDetail Component should display the correct description and modification date when provided" duration="7">
+      <failure message="TestingLibraryElementError: Unable to find an element with the text: 2024-05-15T14:30:00Z. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: 2024-05-15T14:30:00Z. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div>
+      <h2>
+        Thor
+      </h2>
+      <p>
+        The god of thunder.
+      </p>
+      <p>
+        15 mai 2024
+      </p>
+    </div>
+  </div>
+</body>
+    at Object.getElementError (C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19
+    at Object.getByText (C:\Users\lrusse01\marvel-app\src\components\CharacterDetail.test.jsx:70:19)
+    at Promise.then.completed (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+  </file>
   <file path="C:\Users\lrusse01\marvel-app\src\pages\CharactersPage.test.jsx">
-    <testCase name="render CharactersPage component" duration="66">
+    <testCase name="render CharactersPage component" duration="70">
       <failure message="RangeError: Invalid time value"><![CDATA[RangeError: Invalid time value
-    at format (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:15:75)
-    at formatDate (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:61:49)
+    at format (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:8:71)
+    at formatDate (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:54:49)
     at Array.map (<anonymous>)
-    at map (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:58:35)
+    at map (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:51:35)
     at renderWithHooks (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
     at mountIndeterminateComponent (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
     at beginWork (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
@@ -38,12 +80,12 @@
     </testCase>
   </file>
   <file path="C:\Users\lrusse01\marvel-app\src\components\CharactersList.test.jsx">
-    <testCase name="CharactersList Component should display a list with one character" duration="60">
+    <testCase name="CharactersList Component should display a list with one character" duration="61">
       <failure message="RangeError: Invalid time value"><![CDATA[RangeError: Invalid time value
-    at format (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:15:75)
-    at formatDate (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:61:49)
+    at format (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:8:71)
+    at formatDate (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:54:49)
     at Array.map (<anonymous>)
-    at map (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:58:35)
+    at map (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:51:35)
     at renderWithHooks (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
     at mountIndeterminateComponent (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
     at beginWork (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
@@ -74,12 +116,12 @@
     at runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:444:34)
     at Object.worker (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
     </testCase>
-    <testCase name="CharactersList Component should display a list with multiple characters" duration="8">
+    <testCase name="CharactersList Component should display a list with multiple characters" duration="6">
       <failure message="RangeError: Invalid time value"><![CDATA[RangeError: Invalid time value
-    at format (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:15:75)
-    at formatDate (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:61:49)
+    at format (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:8:71)
+    at formatDate (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:54:49)
     at Array.map (<anonymous>)
-    at map (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:58:35)
+    at map (C:\Users\lrusse01\marvel-app\src\components\CharactersList.jsx:51:35)
     at renderWithHooks (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
     at mountIndeterminateComponent (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
     at beginWork (C:\Users\lrusse01\marvel-app\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
@@ -110,6 +152,278 @@
     at runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:444:34)
     at Object.worker (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
     </testCase>
-    <testCase name="CharactersList Component should sort characters by ID" duration="54"/>
+    <testCase name="CharactersList Component should sort characters by ID" duration="56"/>
+  </file>
+  <file path="C:\Users\lrusse01\marvel-app\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage render CharacterDetailPage component" duration="78">
+      <failure message="TestingLibraryElementError: Unable to find an element with the text: 2023-10-01. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: 2023-10-01. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div>
+      <h2>
+        Thor
+      </h2>
+      <img
+        alt="Thor"
+        src="path/to/image/standard_large.jpg"
+      />
+      <p>
+        God of Thunder
+      </p>
+      <p>
+        01 octobre 2023
+      </p>
+    </div>
+    <h2>
+      Capacities
+    </h2>
+    <div
+      style="display: flex;"
+    >
+      <div
+        style="flex: 50%;"
+      >
+        <h3>
+          Using D3
+        </h3>
+        <div
+          id="pie-container"
+        >
+          <svg
+            height="220"
+            viewBox="-110,-110,220,220"
+            width="220"
+          >
+            <g>
+              <path
+                d="M0.676,-104.846A5,5,0,0,1,5.947,-109.839A110,110,0,0,1,94.259,-56.704A5,5,0,0,1,92.316,-49.709L52.456,-28.576A5,5,0,0,1,45.938,-30.244A55,55,0,0,0,5.203,-54.753A5,5,0,0,1,0.676,-59.731Z"
+                fill="#1b9e77"
+              />
+              <path
+                d="M92.95,-48.513A5,5,0,0,1,99.83,-46.196A110,110,0,0,1,40.707,102.191A5,5,0,0,1,34.119,99.142L19.713,56.388A5,5,0,0,1,22.414,50.226A55,55,0,0,0,50.813,-21.05A5,5,0,0,1,53.09,-27.381Z"
+                fill="#d95f02"
+              />
+              <path
+                d="M32.837,99.574A5,5,0,0,1,29.436,105.988A110,110,0,0,1,-87.575,66.562A5,5,0,0,1,-86.401,59.398L-49.059,34.08A5,5,0,0,1,-42.399,35.034A55,55,0,0,0,12.552,53.549A5,5,0,0,1,18.431,56.82Z"
+                fill="#7570b3"
+              />
+              <path
+                d="M-87.16,58.279A5,5,0,0,1,-94.25,56.718A110,110,0,0,1,-99.837,46.18A5,5,0,0,1,-97.15,39.436L-55.238,22.737A5,5,0,0,1,-48.939,25.1A55,55,0,0,0,-48.239,26.42A5,5,0,0,1,-49.818,32.96Z"
+                fill="#e7298a"
+              />
+              <path
+                d="M-97.65,38.179A5,5,0,0,1,-104.239,35.131A110,110,0,0,1,-71.206,-83.843A5,5,0,0,1,-63.989,-83.058L-36.686,-47.142A5,5,0,0,1,-37.278,-40.44A55,55,0,0,0,-52.791,15.432A5,5,0,0,1,-55.739,21.48Z"
+                fill="#66a61e"
+              />
+              <path
+                d="M-62.912,-83.877A5,5,0,0,1,-61.738,-91.041A110,110,0,0,1,-5.947,-109.839A5,5,0,0,1,-0.676,-104.846L-0.676,-59.731A5,5,0,0,1,-5.203,-54.753A55,55,0,0,0,-28.993,-46.738A5,5,0,0,1,-35.609,-47.961Z"
+                fill="#e6ab02"
+              />
+            </g>
+            <g
+              font-family="sans-serif"
+              font-size="12"
+              text-anchor="middle"
+            >
+              <text
+                transform="translate(42.53319321710429,-70.69071703382612)"
+              >
+                <tspan
+                  font-weight="bold"
+                  id="pie-labels-name-Force"
+                  x="0"
+                  y="-0.4em"
+                >
+                  Force
+                </tspan>
+                <tspan
+                  fill-opacity="0.7"
+                  id="pie-labels-value-Force"
+                  x="0"
+                  y="0.7em"
+                >
+                  5
+                </tspan>
+              </text>
+              <text
+                transform="translate(76.64057938488529,30.536397815542948)"
+              >
+                <tspan
+                  font-weight="bold"
+                  id="pie-labels-name-Intelligence"
+                  x="0"
+                  y="-0.4em"
+                >
+                  Intelligence
+                </tspan>
+                <tspan
+                  fill-opacity="0.7"
+                  id="pie-labels-value-Intelligence"
+                  x="0"
+                  y="0.7em"
+                >
+                  8
+                </tspan>
+              </text>
+              <text
+                transform="translate(-26.34237623621839,78.18138662258119)"
+              >
+                <tspan
+                  font-weight="bold"
+                  id="pie-labels-name-Energy"
+                  x="0"
+                  y="-0.4em"
+                >
+                  Energy
+                </tspan>
+                <tspan
+                  fill-opacity="0.7"
+                  id="pie-labels-value-Energy"
+                  x="0"
+                  y="0.7em"
+                >
+                  6
+                </tspan>
+              </text>
+              <text
+                transform="translate(-72.88974366679693,38.643696357732594)"
+              >
+                <tspan
+                  font-weight="bold"
+                  id="pie-labels-name-Speed"
+                  x="0"
+                  y="-0.4em"
+                >
+                  Speed
+                </tspan>
+              </text>
+              <text
+                transform="translate(-79.49287438283586,-22.071087928660805)"
+              >
+                <tspan
+                  font-weight="bold"
+                  id="pie-labels-name-Durability"
+                  x="0"
+                  y="-0.4em"
+                >
+                  Durability
+                </tspan>
+                <tspan
+                  fill-opacity="0.7"
+                  id="pie-labels-value-Durability"
+                  x="0"
+                  y="0.7em"
+                >
+                  6
+                </tspan>
+              </text>
+              <text
+                transform="translate(-26.342376236218335,-78.1813866225812)"
+              >
+                <tspan
+                  font-weight="bold"
+                  id="pie-labels-name-Fighting"
+                  x="0"
+                  y="-0.4em"
+                >
+                  Fighting
+                </tspan>
+                <tspan
+                  fill-opacity="0.7"
+                  id="pie-labels-value-Fighting"
+                  x="0"
+                  y="0.7em"
+                >
+                  3
+                </tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div
+        style="flex: 50%;"
+      >
+        <h3>
+          Using Recharts
+        </h3>
+        <div
+          class="recharts-wrapper"
+          style="position: relative; cursor: default; width: 300px; height: 224px;"
+        >
+          <svg
+            class="recharts-surface"
+            cx="50%"
+            cy="50%"
+            height="224"
+            style="width: 100%; height: 100%;"
+            viewBox="0 0 300 224"
+            width="300"
+          >
+            <title />
+            <desc />
+            <defs>
+              <clippath
+                id="recharts1-clip"
+              >
+                <rect
+                  height="214"
+                  width="290"
+                  x="5"
+                  y="5"
+                />
+              </clippath>
+            </defs>
+            <g
+              class="recharts-layer recharts-pie"
+              tabindex="0"
+            >
+              <g
+                class="recharts-layer"
+              />
+            </g>
+          </svg>
+          <div
+            class="recharts-tooltip-wrapper"
+            style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px;"
+            tabindex="-1"
+          >
+            <div
+              class="recharts-default-tooltip"
+              style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid #ccc; white-space: nowrap;"
+            >
+              <p
+                class="recharts-tooltip-label"
+                style="margin: 0px;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+    at Object.getElementError (C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at C:\Users\lrusse01\marvel-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19
+    at Object.getByText (C:\Users\lrusse01\marvel-app\src\pages\CharacterDetailPage.test.jsx:41:40)
+    at Promise.then.completed (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\lrusse01\marvel-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\lrusse01\marvel-app\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

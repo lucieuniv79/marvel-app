@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export function CharactersList({ characters = [] }) {
-    // État pour le champ de tri sélectionné (id, name, modified)
-    const [sortField, setSortField] = useState('name');
+// Export de la fonction formatDate
+export const formatDate = (isoString) => {
+    const date = new Date(isoString);
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(date); // Nom complet du mois
+    const year = date.getFullYear();
+    return `${day} ${month} ${year}`;
+};
 
-    // État pour l'ordre de tri (ascendant ou descendant)
+export function CharactersList({ characters = [] }) {
+    const [sortField, setSortField] = useState('name');
     const [sortOrder, setSortOrder] = useState('asc');
 
-    // Fonction pour formater une date au format jj-mm-yyyy
-    const formatDate = (isoString) => {
-        const date = new Date(isoString);
-        const day = String(date.getDate()).padStart(2, '0');
-        const month = new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(date); // Nom complet du mois
-        const year = date.getFullYear();
-        return `${day} ${month} ${year}`;
-    };
-
-    // Fonction pour trier les personnages en fonction du champ et de l'ordre sélectionnés
     const sortedCharacters = [...characters].sort((a, b) => {
         if (sortOrder === 'asc') {
             return a[sortField] > b[sortField] ? 1 : -1;
@@ -26,7 +22,6 @@ export function CharactersList({ characters = [] }) {
         }
     });
 
-    // Gestionnaires pour changer le champ de tri et l'ordre
     const handleSortFieldChange = (event) => {
         setSortField(event.target.value);
     };
@@ -38,7 +33,6 @@ export function CharactersList({ characters = [] }) {
     return (
         <div>
             <div>
-                {/* Liste déroulante pour sélectionner le champ de tri */}
                 <label htmlFor="sortField">Trier par :</label>
                 <select id="sortField" value={sortField} onChange={handleSortFieldChange}>
                     <option value="id">ID</option>
@@ -46,7 +40,6 @@ export function CharactersList({ characters = [] }) {
                     <option value="modified">Modifié</option>
                 </select>
 
-                {/* Liste déroulante pour choisir l'ordre de tri */}
                 <label htmlFor="sortOrder">Ordre :</label>
                 <select id="sortOrder" value={sortOrder} onChange={handleSortOrderChange}>
                     <option value="asc">Croissant</option>

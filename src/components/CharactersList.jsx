@@ -51,7 +51,7 @@ export function CharactersList({ characters = [] }) {
                 {sortedCharacters.map((character) => (
                     <li key={character.id}>
                         <Link to={`/characters/${character.id}`}>
-                            {character.name} - {formatDate(character.modified)}
+                        <strong>{character.name}</strong> - {formatDate(character.modified)}
                         </Link>
                     </li>
                 ))}

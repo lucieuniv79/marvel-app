@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import CharactersPage from "./pages/CharactersPage";
 import ContactPage from "./pages/ContactPage";
 import CharacterDetailPage from "./pages/CharacterDetailPage"; // Assurez-vous d'importer votre composant
+import CompareCharactersPage from "./pages/ComparePage";
 
 const routes = [
     {
@@ -14,6 +15,7 @@ const routes = [
             { path: "/", element: <CharactersPage />, loader: getCharacters }, // Vous pouvez maintenant utiliser getCharacters directement
             { path: "/about", element: <AboutPage /> },
             { path: "/contact", element: <ContactPage /> },
+            { path: "/compare", element: <CompareCharactersPage /> },
             {
                 path: "/characters/:id", // Route pour afficher les détails d'un personnage
                 element: <CharacterDetailPage />,
